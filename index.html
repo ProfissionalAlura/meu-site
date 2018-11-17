@@ -20,6 +20,59 @@
     <h1> David </h1>
     <h1> David </h1>
     <h1> Alterado </h1>
+        <meta charset="UTF-8">
+    <title>Vamos</title>
+    <script type="text/javascript">
+
+
+        function pulaLinha(){
+            document.write("<br><br>");
+
+        }
+        function mostrar(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+    /*  function numertosPares(){
+            var contador = 2;
+            while(contador <= 100) {
+                mostrar(contador);
+                contador = contador + 2; // incrementa de dois em dois
+            }
+        }
+
+        function numerosImpar(){
+            for(var cont=1 ; cont <= 100; cont++){
+
+                mostrar(cont);
+
+            }
+
+        }*/
+
+
+         //  numertosPares();
+         //   pulaLinha();
+         //  numerosImpar();
+
+            var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+            var numero = 1;
+            var totalIdades = 0;
+
+            while(numero <= totalFamiliares) {
+                var idade = parseInt(prompt("Informe idade do familiar"));
+                totalIdades = totalIdades + idade;
+                numero++;
+
+            }
+
+            var mediaDasIdades = totalIdades/totalFamiliares
+            mostrar("A média das idades dos familiares é " + mediaDasIdades);
+
+            mostrar("FIM");
+
+        
     
 </body>
 </html>>
